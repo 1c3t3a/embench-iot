@@ -32,12 +32,13 @@
  * JG 2006-01-27: Removed code in codebook
  */
 
-#include <string.h>
+#include "string.h"
 #include "support.h"
 
 /* This scale factor will be changed to equalise the runtime of the
    benchmarks. */
 #define LOCAL_SCALE_FACTOR 87
+#define CPU_MHZ 160
 
 
 #define N 100

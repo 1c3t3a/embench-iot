@@ -15,22 +15,12 @@
 
 #include "support.h"
 #include "qrencode.h"
-
-#include <string.h>
+#include "string.h"
 
 /* This scale factor will be changed to equalise the runtime of the
    benchmarks. */
 #define LOCAL_SCALE_FACTOR 5
-
-/* BEEBS heap is just an array */
-
-#define HEAP_SIZE 8192
-static char heap[HEAP_SIZE];
-
-static const char *encode;
-static int size;
-
-static int benchmark_body (int  rpt);
+#define CPU_MHZ 160
 
 void
 warm_caches (int  heat)

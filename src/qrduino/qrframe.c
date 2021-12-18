@@ -13,12 +13,8 @@
 
    Original code from: https://github.com/tz1/qrduino */
 
-#include <string.h>
-#include <stdlib.h>
-
 /* Header for BEEBS library calls */
 
-#include "beebsc.h"
 
 #ifndef __AVR__
 #define PROGMEM
@@ -28,6 +24,7 @@
 #else
 #include <avr/pgmspace.h>
 #endif
+#include "string.h"
 
 unsigned char *framebase;
 unsigned char *framask;

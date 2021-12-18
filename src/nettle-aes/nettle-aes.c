@@ -12,15 +12,21 @@
    SPDX-License-Identifier: GPL-3.0-or-later */
 
 #include "support.h"
-#include <stdint.h>
-#include <assert.h>
-#include <stddef.h>
-#include <stdlib.h>
-#include <stdbool.h>
 
 /* This scale factor will be changed to equalise the runtime of the
    benchmarks. */
 #define LOCAL_SCALE_FACTOR 78
+#define CPU_MHZ 160
+
+typedef enum { false, true } bool;
+typedef unsigned long size_t;
+typedef unsigned char uint8_t;
+typedef unsigned int uintptr_t;
+typedef unsigned long uint32_t;
+typedef unsigned long long uint64_t;
+
+#define assert_beebs(expr) { if (!(expr)) return; }
+
 
 // From nettle/macros.h
 

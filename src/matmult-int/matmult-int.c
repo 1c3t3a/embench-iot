@@ -33,12 +33,13 @@
  * Thomas Lundqvist at Chalmers.
  *----------------------------------------------------------------------*/
 
-#include <string.h>
+#include "string.h"
 #include "support.h"
 
 /* This scale factor will be changed to equalise the runtime of the
    benchmarks. */
 #define LOCAL_SCALE_FACTOR 46
+#define CPU_MHZ 160
 #define UPPERLIMIT 20
 #define RANDOM_VALUE (RandomInteger ())
 #define ZERO 0

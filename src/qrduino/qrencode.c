@@ -13,9 +13,8 @@
 
    Original code from: https://github.com/tz1/qrduino */
 
-#include <string.h>
-
 #include "qrencode.h"
+#include "string.h"
 
 extern unsigned char neccblk1;
 extern unsigned char neccblk2;
